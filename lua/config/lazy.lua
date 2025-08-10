@@ -74,6 +74,12 @@ require("lazy").setup({
         config = function()
             require("nvim-treesitter-textobjects")
         end,
+    },
+    {
+        "tpope/vim-fugitive",
+    },
+    {
+        "lewis6991/gitsigns.nvim",
     }
 })
 
