@@ -28,5 +28,6 @@ require("lazy").setup({
     require("plugins.parser"),
     require("plugins.lsp"),
     require("plugins.completion-engine"),
+    require("plugins.lazydev")
 })
 
