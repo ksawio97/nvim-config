@@ -27,5 +27,6 @@ require("lazy").setup({
     require("plugins.ui"),
     require("plugins.parser"),
     require("plugins.lsp"),
+    require("plugins.completion-engine"),
 })
 
