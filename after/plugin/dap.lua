@@ -4,7 +4,8 @@ vim.keymap.set('n', '<leader>dc', function() dap.continue() end)
 vim.keymap.set('n', '<leader>ds', function() dap.step_over() end)
 vim.keymap.set('n', '<leader>di', function() dap.step_into() end)
 vim.keymap.set('n', '<leader>do', function() dap.step_out() end)
-vim.keymap.set('n', '<Leader>db', function() dap.toggle_breakpoint() end)
+vim.keymap.set('n', '<leader>db', function() dap.toggle_breakpoint() end)
+vim.keymap.set('n', '<leader>dd', function () dap.disconnect() end)
 
 -- change icons 
 vim.fn.sign_define("DapBreakpoint", {
