@@ -22,6 +22,8 @@ return {
             ensure_installed = {
                 "python",
                 "java-script",
+                "c",
+                "java"
             },
         },
         dependencies = {

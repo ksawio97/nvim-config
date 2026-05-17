@@ -1,6 +1,14 @@
 return {
     {
-        "neovim/nvim-lspconfig", 
+        "neovim/nvim-lspconfig",
+        config = function()
+            -- java shared workspace fix
+            require("lspconfig").jdtls.setup({
+                init_options = {
+                    workspace = vim.fn.stdpath("cache") .. "/jdtls-workspace/" .. vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t"),
+                },
+            })
+        end,
     },
     {
         "mason-org/mason-lspconfig.nvim",

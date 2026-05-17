@@ -61,7 +61,7 @@ return {
        config = function ()
            require("nvim-tree").setup({
                 filters = {
-                    dotfiles = true,
+                     -- dotfiles = true,
                 },
            })
        end
